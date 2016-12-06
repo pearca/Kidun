@@ -1,6 +1,8 @@
 package grailprojects
 
-class ProjectNameController {
+class ProjectController {
+
+    def scaffold = true;
 
     def index =  {
 
@@ -10,8 +12,7 @@ class ProjectNameController {
         render " this is another method and I will control my view using this"
     }
     def current = {
-       def allProjects = ProjectName.list();
+       def allProjects = Project.list();
         [allProjects:allProjects];
-        // [project: projectName, date: dueDate]
     }
 }

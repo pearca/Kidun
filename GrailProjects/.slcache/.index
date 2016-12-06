@@ -5065,3 +5065,5 @@ n:2740:script1479936997907534869604$_run_closure3_closure5_closure8
 n:2834:script1479936997907534869604$_run_closure3_closure6
 n:3138:script1479936997907534869604$_run_closure3_closure6_closure9
 n:4067:script1479936997907534869604$_run_closure3_closure6_closure9_closure10
+n:11683:org/springframework/uaa/client/protobuf/UaaClient$UaaEnvelope$Builder
+n:2511:org/springframework/uaa/client/util/Base64$OutputStream

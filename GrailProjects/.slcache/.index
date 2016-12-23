@@ -5067,3 +5067,7 @@ n:3138:script1479936997907534869604$_run_closure3_closure6_closure9
 n:4067:script1479936997907534869604$_run_closure3_closure6_closure9_closure10
 n:11683:org/springframework/uaa/client/protobuf/UaaClient$UaaEnvelope$Builder
 n:2511:org/springframework/uaa/client/util/Base64$OutputStream
+n:1800:sl/org/objectweb/asm/tree/FrameNode
+n:740:sl/org/objectweb/asm/tree/IincInsnNode
+n:1671:sl/org/objectweb/asm/tree/TableSwitchInsnNode
+n:2483:sl/org/objectweb/asm/tree/AnnotationNode

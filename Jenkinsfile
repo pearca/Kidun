@@ -6,6 +6,11 @@ pipeline {
                 sh 'echo "Good job";'
             }
         }
+        stage('build') {
+            steps {
+                sh 'du -sh *;'
+            }
+        }
     }
     post {
         always {

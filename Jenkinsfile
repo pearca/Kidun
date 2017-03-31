@@ -6,6 +6,16 @@ pipeline {
                 sh 'echo "Good job";'
             }
         }
+        stage('build') {
+            steps {
+                sh 'du -sh *;'
+            }
+        }
+        stage('branch') {
+            steps {
+                sh 'git branch;'
+            }
+        }
     }
     post {
         always {

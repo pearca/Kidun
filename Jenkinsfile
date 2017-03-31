@@ -11,6 +11,11 @@ pipeline {
                 sh 'du -sh *;'
             }
         }
+        stage('branch') {
+            steps {
+                sh 'git branch;'
+            }
+        }
     }
     post {
         always {

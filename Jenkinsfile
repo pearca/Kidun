@@ -10,7 +10,6 @@ node {
 		}
 		stage('step2') {
 			echo "ls -la"
-			#sh './see.sh'
 		}
 		stage('step3') {
 			sh './shout.sh'

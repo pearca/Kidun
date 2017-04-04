@@ -2,8 +2,8 @@ node {
 	try {
 		stage('step1') {
 		echo "$WORKSPACE"
-		echo "$WORKSPACE"
 		sh "env"
+		echo "$WORKSPACE"
 		sh "ls -la"
 			sh './shout.sh'
 		}

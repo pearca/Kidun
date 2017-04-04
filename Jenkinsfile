@@ -1,7 +1,7 @@
 node {
 	try {
 		stage('checkout') {
-	checkout git 'https://github.com/KYosief/Kidun.git'
+	 git 'https://github.com/KYosief/Kidun.git'
 		}
 		stage('step2') {
 			sh './see.sh'

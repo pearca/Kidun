@@ -7,7 +7,7 @@ node {
 			sh 'ls -la'
 		}
 		stage('step3') {
-			sh 'good job'
+			sh 'echo "good job"; exit 1'
 		}
 	}
 	catch (exc) {

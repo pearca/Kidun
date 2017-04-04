@@ -1,8 +1,12 @@
 node {
 	try {
 		stage('checkout') {
-	 	git 'https://github.com/KYosief/Kidun.git',
-		branches: [[name: '*/NewBranch']],
+		checkout([$class: 'GitSCM',
+    branches: [[name: '*/NewBranch']],
+    doGenerateSubmoduleConfigurations: false,
+    extensions: [[$class: 'CleanCheckout']],
+    submoduleCfg: [],
+    userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'https://github.com/KYosief/Kidun.git']]
 		}
 		stage('step2') {
 			sh './see.sh'

@@ -4,6 +4,9 @@ node {
 		echo "$WORKSPACE"
 		sh "env"
 		echo "$WORKSPACE"
+		echo "$WORKSPACE"
+		def workspace = pwd()
+		echo "$WORKSPACE"
 		sh "ls -la"
 			sh './shout.sh'
 		}

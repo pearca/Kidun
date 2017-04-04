@@ -22,7 +22,7 @@ node {
 									body: "Something is wrong with ${env.BUILD_URL}"
         }
 				if (currentResult == 'SUCCESS') {
-						echo 'This will run only if the run was marked as unstable'
+						echo 'This will run only if the run was marked as stable'
 						mail  to: 'kidane.yosief@pearson.com',
 									subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
 									body: "Bingo with ${env.BUILD_URL}"

@@ -1,3 +1,3 @@
 #!/bin/bash
-cd $WORKSPACE
+#cd $WORKSPACE
 echo "great job boss"

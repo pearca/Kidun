@@ -12,7 +12,7 @@ node {
 			sh 'echo "$WORKSPACE"'
 		}
 		stage('step3') {
-			sh './shout.sh; exit 1'
+			sh echo "fail"; exit 1'
 		}
 	}
 	catch (exc) {

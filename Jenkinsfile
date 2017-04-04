@@ -9,7 +9,7 @@ node {
     userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'https://github.com/KYosief/Kidun.git']]])
 		}
 		stage('step2') {
-			echo "ls -la"
+			sh 'echo "$WORKSPACE"'
 		}
 		stage('step3') {
 			sh './shout.sh'

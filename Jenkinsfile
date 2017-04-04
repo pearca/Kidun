@@ -6,7 +6,7 @@ node {
     doGenerateSubmoduleConfigurations: false,
     extensions: [[$class: 'CleanCheckout']],
     submoduleCfg: [],
-    userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'https://github.com/KYosief/Kidun.git']]
+    userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'https://github.com/KYosief/Kidun.git']])
 		}
 		stage('step2') {
 			sh './see.sh'

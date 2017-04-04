@@ -2,7 +2,7 @@ node {
 	try {
 		stage('checkout') {
 		checkout([$class: 'GitSCM',
-    branches: [[name: '*/NewBranch']],
+    branches: [[name: '*/master']],
     doGenerateSubmoduleConfigurations: false,
     extensions: [[$class: 'CleanCheckout']],
     submoduleCfg: [],

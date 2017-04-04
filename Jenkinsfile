@@ -34,6 +34,7 @@ node {
 								body: "Bingo with ${env.BUILD_URL}"
 			}
       def previousResult = currentBuild.previousBuild?.result
+			echo previousResult
       if (previousResult != null && previousResult != currentResult) {
           echo 'This will run only if the state of the Pipeline has changed'
           echo 'For example, if the Pipeline was previously failing but is now successful'

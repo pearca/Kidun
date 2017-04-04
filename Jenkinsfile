@@ -1,14 +1,7 @@
 node {
 	try {
-		stage('step1') {
-		echo "$WORKSPACE"
-		sh "env"
-		echo "$WORKSPACE"
-		echo "$WORKSPACE"
-		def workspace = pwd()
-		echo "$workspace"
-		sh "ls -la"
-			sh './shout.sh'
+		stage('checkout') {
+	checkout git 'https://github.com/KYosief/Kidun.git'
 		}
 		stage('step2') {
 			sh './see.sh'

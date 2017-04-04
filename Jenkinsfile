@@ -6,7 +6,7 @@ node {
 		echo "$WORKSPACE"
 		echo "$WORKSPACE"
 		def workspace = pwd()
-		echo "$WORKSPACE"
+		echo "$workspace"
 		sh "ls -la"
 			sh './shout.sh'
 		}

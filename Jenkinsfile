@@ -2,6 +2,7 @@ node {
 	try {
 		stage('step1') {
 		echo "$WORKSPACE"
+		echo "$WORKSPACE"
 			sh './shout.sh'
 		}
 		stage('step2') {

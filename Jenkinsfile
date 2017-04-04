@@ -1,7 +1,8 @@
 node {
 	try {
 		stage('checkout') {
-	 git 'https://github.com/KYosief/Kidun.git'
+	 	git 'https://github.com/KYosief/Kidun.git',
+		branches: [[name: '*/NewBranch']],
 		}
 		stage('step2') {
 			sh './see.sh'

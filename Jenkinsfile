@@ -1,13 +1,13 @@
 node {
 	try {
 		stage('step1') {
-			sh 'env'
+			sh './look.sh'
 		}
 		stage('step2') {
-			sh 'ls -la'
+			sh './see.sh'
 		}
 		stage('step3') {
-			sh 'echo "good job";'
+			sh './shout.sh'
 		}
 	}
 	catch (exc) {

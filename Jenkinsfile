@@ -19,6 +19,7 @@ node {
 		echo 'I failed'
 	}
 	finally {
+	echo '$currentBuild.result'
       def currentResult = currentBuild.result ?: 'SUCCESS'
       if (currentResult == 'UNSTABLE') {
           echo 'This will run only if the run was marked as unstable'

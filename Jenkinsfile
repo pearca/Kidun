@@ -24,7 +24,7 @@ node {
 				if (currentResult == 'SUCCESS') {
 						echo 'This will run only if the run was marked as stable'
 						mail  to: 'kidane.yosief@pearson.com',
-									subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+									subject: "Great Pipeline: ${currentBuild.fullDisplayName}",
 									body: "Bingo with ${env.BUILD_URL}"
 				}
         def previousResult = currentBuild.previousBuild?.result

@@ -1,7 +1,9 @@
 node {
 	try {
 		stage('step1') {
-			sh './look.sh'
+			steps{
+				sh './look.sh'
+			}
 		}
 		stage('step2') {
 			sh './see.sh'

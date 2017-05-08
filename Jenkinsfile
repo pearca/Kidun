@@ -1,12 +1,7 @@
 node {
 	try {
 		stage('checkout') {
-		checkout([$class: 'GitSCM',
-    branches: [[name: '*/master']],
-    doGenerateSubmoduleConfigurations: false,
-    extensions: [[$class: 'CleanCheckout']],
-    submoduleCfg: [],
-    userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'git@github.com:pearca/Kidun.git']]])
+			checkout scm;
 		}
 		stage('step2') {
 			sh 'echo "$WORKSPACE"'

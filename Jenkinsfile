@@ -6,7 +6,7 @@ node {
     doGenerateSubmoduleConfigurations: false,
     extensions: [[$class: 'CleanCheckout']],
     submoduleCfg: [],
-    userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'Igit']]])
+    userRemoteConfigs: [[credentialsId: 'git-credentials', url: 'git@github.com:pearca/Kidun.git']]])
 		}
 		stage('step2') {
 			sh 'echo "$WORKSPACE"'

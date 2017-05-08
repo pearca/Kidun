@@ -2,7 +2,7 @@ node {
 	try {
 		stage('checkout') {
 			checkout scm;
-			properties [[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', artifactDaysToKeepStr: '20', artifactNumToKeepStr: '30', daysToKeepStr: '2', numToKeepStr: '2']]]
+			[[$class: 'BuildDiscarderProperty', strategy: [$class: 'LogRotator', artifactDaysToKeepStr: '20', artifactNumToKeepStr: '30', daysToKeepStr: '2', numToKeepStr: '2']]]
 		}
 		stage('step2') {
 			sh 'echo "$WORKSPACE"'

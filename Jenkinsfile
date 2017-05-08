@@ -7,7 +7,7 @@ node {
 			sh 'echo "$WORKSPACE"'
 		}
 		stage('step3') {
-			sh 'echo "fail"; exit 1'
+			sh 'echo "this is a good test"
 		}
 	}
 	catch (exc) {
